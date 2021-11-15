@@ -9,6 +9,7 @@ function createTable(title,tableData) {
       let th = document.createElement("th", colspan = 21);
       let text = document.createTextNode(title)
       th.appendChild(text)
+      th.setAttribute("colspan","21")
       //th.colspan = 21
       table.appendChild(th)
       //const hrow = header.insertRow(0)
