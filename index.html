@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>replit</title>
+    <title>D&D 2 Way Tables</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
   </head>
   <body>
-    <br><br>
-    <script src="script.js"></script>
+    <p>The following 2 tables represent dice rolls with advantage or disadvantage. The each red border represents one dice roll. Where the table intersects is the outcome. For example if you roll a 10 on the top row and a 17 on the left hand row the outcome with advantage would be 17 and with disadvantage would be 10. </p>
+    
+    <div id = "tableDiv">
+    </div>
     <form id = "selector">
       Enter desired number: <input type="number" id="dnum" name="dnum" min="1" max="20">
       <select name="condition" id="condition">
@@ -20,16 +23,7 @@
     </form>
     <p id="results"></p>
     <script>
-      function myFunction(){
-        let x = document.getElementById("selector");
-        let text = "";
-        let i;
-        for (i = 0; i < x.length ;i++) {
-          text += x.elements[i].value + "<br>";
-        }
-        let textnode = document.createTextNode(text)
-        document.getElementById("results").appendChild(textnode)
-      }
+      
     </script>
   </body>
 </html>
