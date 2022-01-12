@@ -8,22 +8,19 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <p>The following 2 tables represent dice rolls with advantage or disadvantage. The each red border represents one dice roll. Where the table intersects is the outcome. For example if you roll a 10 on the top row and a 17 on the left hand row the outcome with advantage would be 17 and with disadvantage would be 10. </p>
+    <p>The following 2 tables represents the sample space or all posible dice rolls with advantage or disadvantage. The each red border represents one dice roll. Where the table intersects is the outcome. For example if you roll a 10 on the top row and a 17 on the left hand row the outcome with advantage would be 17 and with disadvantage would be 10. </p>
     
     <div id = "tableDiv">
     </div>
-    <form id = "selector">
+    <div id = "selector">
       Enter desired number: <input type="number" id="dnum" name="dnum" min="1" max="20">
       <select name="condition" id="condition">
         <option value="greater">Greater than</option>
         <option value="less">Less than</option>
         <option value="equal">Equal to</option>
       </select>
-      <button onclick="myFunction()">Find Probability</button>not working currently
-    </form>
-    <p id="results"></p>
-    <script>
-      
-    </script>
+      <button id="probButton">Find Probability</button>
+    </div>
+    <div id="results"></div>
   </body>
 </html>
